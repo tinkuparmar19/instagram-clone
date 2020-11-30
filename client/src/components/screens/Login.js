@@ -22,7 +22,7 @@ const Login = () => {
             .then(data => {
                 if(data.error) {
                     M.toast({html: data.error})
-                } else {
+                } else { 
                     localStorage.setItem('jwt', data.token)
                     localStorage.setItem('user', JSON.stringify(data.user))
                     dispatch({type: 'USER', payload: data.user})
