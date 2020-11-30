@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { userContext } from '../../App'
+import {Link} from 'react-router-dom'
 
 
 const Home = () => {
@@ -113,8 +114,8 @@ const Home = () => {
             {
                     data.map((item) => {
                         return (
-                        <div key={item._id}>
-                            <h4>{item.postedBy.name}</h4>
+                        <div key={item._id} className='homeposts'>
+                            <h4><Link to={item.postedBy._id !== state._id ? '/profile/'+item.postedBy._id : '/profile'}>{item.postedBy.name}</Link></h4>
                             {
                                 item.postedBy._id === state._id && 
                                 <i className='material-icons' 
@@ -127,8 +128,7 @@ const Home = () => {
                             <div className='homeImage'>
                                 <img src={item.photo} />
                             </div>
-                            <div>    
-                                <i class="material-icons">favorite_border</i>
+                            <div>
                                 { 
                                     item.likes.includes(state._id) ?
                                         <i className="material-icons"
@@ -141,7 +141,7 @@ const Home = () => {
                                         >thumb_up
                                         </i>
                                 }
-                                <p>{item.likes.length}</p>
+                                <span className='like-count'>{item.likes.length}</span>
                                 <p>{item.title}</p>
                                 <p>{item.body}</p>
                                 {

@@ -73,3 +73,15 @@ a {
 .postbtn {
   margin: 8% 43%;
 }
+
+.material-icons {
+  cursor: pointer;
+}
+
+.like-count {
+  margin: 0px 10px;
+}
+
+.homeposts {
+  margin-bottom: 20px;
+}
