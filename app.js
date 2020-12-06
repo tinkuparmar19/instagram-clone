@@ -23,7 +23,9 @@ if(process.env.NODE_ENV == 'production') {
 mongoose.connect(MONGOURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-})
+}).then(() => console.log( 'Database Connected' ))
+.catch(err => console.log( err ));
+
 mongoose.connection.on('connected', () => {
     console.log('connected with mongo')
 })

@@ -36,7 +36,7 @@ const Login = () => {
     return (
         <div className='mycard'>
             <div className='card auth-card'>
-                <h2>Instagram</h2>
+                <h2 className='brand-logo'>Instagram</h2>
                 <input 
                     type='text'
                     placeholder='email'
@@ -52,8 +52,8 @@ const Login = () => {
                 <button className='btn waves-effect waves-light' onClick={() => postData()}>
                     Login
                 </button>
-                <h5>
-                    <Link to='/signup'>Don't have an account ?</Link>
+                <h5 className='loginSign'>
+                    Don't have an account ?<Link to='/signup'> Signup</Link>
                 </h5>
             </div>
         </div>

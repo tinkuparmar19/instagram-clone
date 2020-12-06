@@ -27,7 +27,7 @@ a {
 .profileLand {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
 }
 
 .profilePic img {
@@ -36,9 +36,17 @@ a {
   border-radius: 80px;
 }
 
+.userstate {
+  margin: 0px 50px;
+}
+
 .followState {
   display: flex;
   justify-content: space-between;
+}
+
+.followState p {
+  padding-right: 10px;
 }
 
 .gallery {
@@ -84,4 +92,9 @@ a {
 
 .homeposts {
   margin-bottom: 20px;
+}
+
+.loginSign a{
+  color: rgb(19, 19, 209) !important;
+  text-decoration: underline;
 }
