@@ -14,12 +14,12 @@ cd client, run command npm start to start development server
 
 home screen
 
-![home screen](./images/insta1)
+![home screen](./images/insta1.png)
 
 profile screen
 
-![home screen](./images/insta1)
+![profile screen](./images/insta2.png)
 
 signup screen
 
-![home screen](./images/insta1)
+![signup screen](./images/insta3.png)
